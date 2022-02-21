@@ -131,7 +131,7 @@ ul {
 /* HEADING */
 
 .heading-section {
-  background-image: url("./assets/heading-img.jpg");
+  background-image: url("./src/assets/heading-img.jpg");
   opacity: 1;
   background-size: cover;
   background-repeat: no-repeat;
@@ -215,7 +215,7 @@ ul {
   flex-direction: column;
   color: #fff;
   height: 69vh;
-  background-image: url(./assets/section1.png);
+  background-image: url('./src/assets/section1.png');
   opacity: 1;
   background-size: cover;
   background-repeat: no-repeat;
