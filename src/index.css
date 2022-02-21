@@ -1,0 +1,583 @@
+/* stylelint-disable no-descending-specificity */
+body {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.pratic {
+  color: #11abab;
+}
+
+.bank {
+  color: #483493;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+
+/* NAVBAR */
+
+.header {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  background-color: #959aa1e0;
+}
+
+.logo-div {
+  display: none;
+}
+
+.navbar-toggler {
+  width: 35px;
+  height: 35px;
+  position: relative;
+  transition: 0.5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: 0;
+}
+
+.navbar-toggler span {
+  margin: 0;
+  padding: 0;
+}
+
+.toggler-icon {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #ec5242;
+  border-radius: 1px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.middle-bar {
+  margin-top: 0;
+}
+
+/* when nav is clicked */
+
+.navbar-toggler .top-bar {
+  margin-top: 0;
+  transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+}
+
+.navbar-toggler .bottom-bar {
+  margin-top: 0;
+  transform: rotate(-135deg);
+}
+
+/* State when navbar is collapsed */
+
+.navbar-toggler.collapsed .top-bar {
+  margin-top: -20px;
+  transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  margin-top: 20px;
+  transform: rotate(0deg);
+}
+
+/* Color of hamburguer */
+
+.navbar-toggler.collapsed .toggler-icon {
+  background: #fff;
+}
+
+.navbar-nav > li {
+  font-weight: 600;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #fff;
+}
+
+/* HEADING */
+
+.heading-section {
+  background-image: url("./assets/heading-img.jpg");
+  opacity: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 23% 40%;
+  height: 95vh;
+  z-index: -1;
+  text-align: center;
+  border-bottom: #0c7979 solid 0.5rem;
+}
+
+.heading-content {
+  background-color: rgba(0, 0, 0, 0.205);
+  height: 95vh;
+  padding: 5rem 1rem;
+  color: #fff;
+}
+
+.heading-content h1 {
+  margin: 7rem 0.5rem 0 0.5rem;
+}
+
+.heading-content span {
+  font-weight: 100;
+}
+
+/* CARDS SECTION */
+
+#cards-section {
+  margin: 1rem 0 0 0;
+}
+
+#cards-section img {
+  width: 100%;
+  padding: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  margin: 2.5rem 0;
+  border: none;
+}
+
+.card-image {
+  order: -1;
+  width: 80%;
+  margin-bottom: 1.5rem;
+}
+
+.card-description {
+  width: 95%;
+}
+
+.card-description h2 {
+  font-size: 1.6rem;
+}
+
+.card-description span {
+  color: #11abab;
+}
+
+.card-description p {
+  margin-bottom: 1rem;
+}
+
+.btn-link {
+  padding: 0.5rem 1rem;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+/* CTAPJ */
+
+#CTAPJ {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  height: 69vh;
+  background-image: url(./assets/section1.png);
+  opacity: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 40% 10%;
+
+}
+
+#CTAPJ div {
+  margin: 15rem 1rem 8rem 1rem;
+  justify-self: center;
+}
+
+#CTAPJ h2 {
+  font-size: 1.1rem;
+  font-weight: 100;
+  margin: 0.5rem 0;
+}
+
+#CTAPJ p {
+  font-size: 2.5rem;
+  line-height: 1.1em;
+  margin: 0.5rem 0;
+}
+
+#CTAPJ button {
+  margin: 0.5rem 0;
+}
+
+/* CONTACT */
+
+#contact {
+  margin: 2rem;
+}
+
+#contact h3 {
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+#contact p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+input {
+  width: 100%;
+  border: #4e5055bd solid 1px;
+  padding: 0.5rem;
+}
+
+textarea {
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.btn-btn {
+  background-color: #11abab;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  transition: all 0.2s;
+}
+
+.btn-btn:hover {
+  background-color: #0c7979;
+  border: #fff solid 2px;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #11abab;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer img {
+  margin: 1rem 0;
+}
+
+footer h2 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+footer p {
+  font-size: 1.2rem;
+}
+
+footer ul {
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media (min-width: 768px) {
+  /* NAVBAR */
+
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.95);
+    font-size: 0.6rem;
+  }
+
+  .toggler-icon {
+    display: none;
+  }
+
+  .header hr {
+    display: none;
+  }
+
+  .logo-div {
+    display: block;
+    margin-left: 3rem;
+  }
+
+  .logo-div img {
+    height: 35px;
+  }
+
+  .navbar {
+    margin-right: 1rem;
+    align-items: center;
+  }
+
+  nav ul {
+    align-items: center;
+  }
+
+  nav .zeromargin {
+    margin: 0 1rem 0 0 !important;
+  }
+
+  .nav-item {
+    margin-right: 1rem;
+  }
+
+  .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {
+    color: #212529;
+    font-size: 1.2em;
+}
+
+  .menu-btn {
+    padding: 0.3rem;
+    margin: 0;
+  }
+
+  /* CARDS */
+
+  .cards-logo {
+    display: none;
+  }
+  
+  
+  .card-description {
+    width: 65%;
+  }
+  
+  .card-description h2 {
+    font-size: 2rem;
+  }
+
+  .card-description p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .card-image {
+    width: 50%;
+  }
+
+  .card-img {
+    width: 90%;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .btn-link {
+    font-size: 1.2rem;
+    padding: 0.8rem 2rem;
+    transition: 0.2s;
+  }
+
+  .btn-link:hover {
+    background-color: #fff;
+    color: #0c7979;
+    border: #0c7979 solid 1px;
+  }
+
+  /* CTAPJ */
+
+  #CTAPJ {
+    height: 75vh;
+    text-align: center;
+  }
+  
+  #CTAPJ div {
+    justify-self: center;
+    align-self: center;
+  }
+  
+  #CTAPJ h2 {
+    font-size: 2rem;
+    margin-top: 5rem;
+  }
+  
+  #CTAPJ a {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+  #CTAPJ a:hover {
+    background-color: #fff;
+    color: #0c7979;
+  }
+  
+
+}
+
+@media (min-width: 992px) {
+
+  /* HEADING */
+
+  .heading-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .heading-content h1 {
+    margin-right: 2em;
+  }
+
+  /* CARDS */
+
+  .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2rem 5rem;
+    padding: 3rem 3rem;
+  }
+
+  .card:nth-child(2n) {
+    flex-direction: row-reverse;
+    text-align: left;
+    margin-left: 0;
+  }
+  
+  
+  .card-description {
+    width: 55%;
+    margin-left: 3rem;
+  }
+  
+  .card-description h2 {
+    font-size: 2rem;
+  }
+
+  .card-description p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .card-image {
+    width: 30%;
+    margin: 0;
+    display: flex;
+  }
+
+  .card-img {
+    width: 90%;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .btn-link {
+    font-size: 1.2rem;
+    padding: 0.8rem 2rem;
+    transition: 0.2s;
+  }
+
+  .btn-link:hover {
+    background-color: #fff;
+    color: #0c7979;
+    border: #0c7979 solid 1px;
+  }
+
+/* CTAPJ */
+
+#CTAPJ {
+  height: 85vh;
+  justify-content: flex-end;
+}
+
+#CTAPJ h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+#CTAPJ a {
+  margin-bottom: 5rem;
+}
+
+/* CONTACT */
+
+#contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#contact h2 {
+  font-size: 1.8rem;
+}
+
+#contact h2 {
+  font-size: 1.5rem;
+}
+
+#contact p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-div {
+  width: 55%;
+}
+
+/* FOOTER */
+
+footer {
+  flex-direction: row;
+  align-items: center;
+}
+
+footer img {
+  width: 25%;
+}
+
+footer h2 {
+  font-size: 1rem;
+  width: 20%;
+}
+footer p {
+  font-size: 1rem;
+  width: 25%;
+}
+
+footer ul {
+  width: 30%;
+}
+
+}

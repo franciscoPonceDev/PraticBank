@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e971436820.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="index.css">
+    <title>Pratic Bank</title>
+</head>
+<body>
+    <header class="header shadow">
+        <div class="logo-div me-auto bd-highlight">
+          <a class="navbar-brand" href="#"><img id="logo-img" src="./assets/logo-horizontal-1.jpeg" alt="Logo"></a>
+        </div>
+        <nav class="navbar navbar-expand-md navbar-light">
+          <div class="container-fluid">
+            <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="toggler-icon top-bar"></span>
+              <span class="toggler-icon middle-bar"></span>
+              <span class="toggler-icon bottom-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav me-auto ms-3 mb-lg-0 ">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Sobre Nós<hr></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#program">Serviços<hr></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#partners">Abra sua conta<hr></a>
+                </li>
+                <li class="nav-item mb-2 zeromargin">
+                  <a class="nav-link active" aria-current="page" href="#">Seu Negócio<hr></a>
+                </li>
+                <li class="nav-item mb-2 zeromargin">
+                    <a class="nav-link active" aria-current="page" href="#contact">Contato<hr></a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <section class="heading-section">
+        <div class="heading-content">
+            <header>
+                <h1>Inovação e praticidade <br><span>em serviços financeiros</span></h1>
+            </header>
+          </div>
+    </section>
+    <section id="cards-section">
+      <header><img class="cards-logo" src="./assets/logo-horizontal-1.jpeg" alt=""></header>
+    </section>
+    <section id="CTAPJ">
+      <div>
+        <header><h2>PJ Pratic Bank</h2></header>
+        <p>Te ajudamos a realizar seus sonhos</p>
+        <a href="#" class="btn btn-outline-light">Abra sua conta PJ →</a>
+      </div>
+    </section>
+    <section id="contact">
+      <div>
+        <header><h2>Quer falar com o <span class="pratic">Pratic</span><span class="bank">Bank</span>?</h2></header><br>
+        <h3>Entre em contato pelo Whats App:</h3>
+        <p><i class="fab fa-whatsapp fa-lg"></i>&#160;(ddd) 99999-9999</p>
+        <h3>Ou preencha o formulário:</h3>
+      </div>
+      <div class="contact-div">
+        <form id="contact-form">
+          <div class="form-group">
+              <label for="name"></label>
+              <input class="name" type="text" id="name" placeholder="Nome Completo" required>
+          </div>
+          <div class="form-group">
+              <label for="email"></label>
+              <input class="email" type="email" id="email" placeholder="Digite seu e-mail" required>
+          </div>
+          <div class="form-group">
+            <label for="message"></label>
+            <textarea name="message" placeholder="Deixe sua mensagem..." id="message" cols="40" rows="6" required></textarea>
+          </div>
+          <input id="submit-btn" class="btn-btn" type="submit" value="Enviar">
+      </form>
+      </div>
+    </section>
+    <footer>
+      <img src="./assets/logo-horizontal-2.jpeg" alt="logo">
+      <h2>© 2022 PRATIC BANK</h2>
+      <p>Av. Lorem Ipsum, 777 - Lorem Ipsum, São Paulo - SP. 00000-000</p>
+      <ul>
+        <li><i class="fab fa-instagram fa-lg"></i></li>
+        <li><i class="fab fa-facebook fa-lg"></i></li>
+        <li><i class="fab fa-twitter fa-lg"></i></li>
+        <li><i class="fab fa-linkedin-in fa-lg"></i></li>
+      </ul>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>
